@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+
+import MobileMenu from "./mobile-menu";
+
 import { Lateef } from "next/font/google";
+import Menu from "./menu";
 
 const lateef = Lateef({
   subsets: ["latin"],
@@ -20,33 +24,8 @@ export default function Navbar() {
           <p className="text-xl leading-5">Group of Companies</p>
         </div>
       </Link>
-      <ul className="flex items-center gap-14">
-        <li>
-          <Link href="/" className="hover:text-violet-400 duration-150">
-            Главная
-          </Link>
-        </li>
-        <li>
-          <Link href="/" className="hover:text-violet-400 duration-150">
-            О компании
-          </Link>
-        </li>
-        <li>
-          <Link href="/" className="hover:text-violet-400 duration-150">
-            Услуги
-          </Link>
-        </li>
-        <li>
-          <Link href="/" className="hover:text-violet-400 duration-150">
-            Галерея
-          </Link>
-        </li>
-        <li>
-          <Link href="/" className="hover:text-violet-400 duration-150">
-            Контакты
-          </Link>
-        </li>
-      </ul>
+      <Menu />
+      <MobileMenu />
     </nav>
   );
 }
