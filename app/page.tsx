@@ -1,113 +1,63 @@
-import Image from 'next/image'
+import Hero from "./_components/hero";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+    <main className="grow">
+      <div className="container flex flex-col gap-8">
+        <Hero />
+        <p>
+          Грузовой (складской) комплекс по перевалке и обработке всех видов
+          минеральных удобрений, располагающийся непосредственно на территории
+          первого грузового района порта Рени. На комплексе установлено
+          высокоточное автоматизированное оборудование по смешиванию, расфасовке
+          и перевалке гранулированных минеральных удобрений производства EMT
+          (Нидерланды) позволяет получать актуальную продукцию – сухие туковые
+          смеси, а также осуществляет фасовку навальных минеральных удобрений в
+          мешки или биг-беги. При необходимости, установка может обрабатывать и
+          другие сыпучие грузы, такие как полиэтилен, полипропилен, капролактам
+          и пр., осуществлять как отгрузку навалом по конвейерной линии, идущей
+          от складов до причальной линии в направлении морского и речного
+          транспорта, так и прием навала, расфасовку и дальнейшую отгрузку на
+          наземный транспорт. Pасчётная производительность комплекса составляет
+          до 50 000 тонн в месяц.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <p>
+          Комплекс по перевалке сжиженных углеводородных газов (СУГ) расположен
+          у причалов № 15-16 второго грузового района порта Pени (общая площадь
+          территории ок. 20 000 м2). Через комплекс можно перегружать СУГ:
+          пропан, бутан, смеси пропана-бутана, пропилен, пентан, изопентан,
+          изобутан, фракции С4, винилхлорид, аммиак, акрилонитрил, светлые
+          нефтепродукты и другие жидкие химические продукты с помощью
+          железнодорожной эстакады слива-налива на 12 вагоно-цистерн на речные и
+          морские суда, а также в обратном направлении, из судов на берег.
+          Pасчётная производительность комплекса составляет около 30 000 тонн в
+          месяц.
+        </p>
+        <p>
+          Компания «Marlena Group of Companies», была основана в 1990 году
+          Леонидом Михайловичем Крашунским и Олегом Леонидовичем Крашунским,
+          возглавляшими компанию до 2018 года. На мировом рынке минеральных
+          удобрений прошла путь от трейдера до опытного и надежного
+          транспортного оператора. В 1996 году «Marlena Group of Companies»,
+          совместно с Ильичевским морским торговым портом, построила терминал
+          для жидких химических продуктов, что позволило одними из первых в
+          Украине начать перевалки таких продуктов как: каустическая сода,
+          жидкие минеральные удобрения, четыреххлористый углерод, перхлорэтилен,
+          винилацетат, уксусная кислота и многие другие для экспорта из Украины
+          и стран СНГ, бензол и стирол для импорта. В 1998 году наша компания
+          совместно с Кирово-Чепецким Химкомбинатом разработала документацию по
+          производству азотофосфата и внесла инвестиции в вышеуказанный проект.
+          Данный продукт поставлялся нашей компанией на рынки Европы и Мексики
+          до 2002 года. С 2004 года основная деятельность компании
+          осуществляется на территории Специальной Экономической Зоны Морского
+          торгового порта Pени, в Одесской области, Украина. Компания имеет
+          дочернее предприятие «PениЛес», на базе которого предоставляет
+          транспортно-экспедиторские услуги по перевалке сжиженных газов, жидких
+          химических продуктов и минеральных удобрений. Выгодное географическое
+          расположение порта в устье реки Дунай позволяет принимать и
+          обслуживать как речные суда и баржи, так и морские суда.
+        </p>
       </div>
     </main>
-  )
+  );
 }
