@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import MobileMenu from "./mobile-menu";
+import MobileMenu from "./menu/mobile-menu";
 
 import { Lateef } from "next/font/google";
-import Menu from "./menu";
+import Menu from "./menu/menu";
 
 const lateef = Lateef({
   subsets: ["latin"],

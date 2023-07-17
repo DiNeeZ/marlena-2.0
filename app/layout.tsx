@@ -1,5 +1,7 @@
-import Header from "./_components/header";
 import Footer from "./_components/footer";
+import HeaderLayout from "./_components/layouts/header-layout";
+import TopNavbar from "./_components/top-navbar";
+import Navbar from "./_components/navbar";
 
 import type { Metadata } from "next";
 import { PT_Sans } from "next/font/google";
@@ -25,7 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${nunito.className} flex flex-col min-h-screen`}>
-        <Header />
+        <HeaderLayout>
+          <TopNavbar />
+          <Navbar />
+        </HeaderLayout>
         {children}
         <Footer />
       </body>

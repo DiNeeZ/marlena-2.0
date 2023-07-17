@@ -1,9 +1,11 @@
 import Link from "next/link";
 import React from "react";
+import LanguageSwitcher from "./language-switcher";
+import ThemeSwitcher from "./theme-switcher";
 
 export default function TopNavbar() {
   return (
-    <div className="py-3 text-sm bg-white/5">
+    <div className="hidden md:block py-3 text-sm bg-white/5">
       <div className="container flex items-center justify-between">
         <div>
           <ul className="flex items-center gap-8">
@@ -28,8 +30,12 @@ export default function TopNavbar() {
           </ul>
         </div>
         <ul className="flex items-center gap-8">
-          <li>Language</li>
-          <li>Color</li>
+          <li>
+            <LanguageSwitcher />
+          </li>
+          <li>
+            <ThemeSwitcher />
+          </li>
         </ul>
       </div>
     </div>
