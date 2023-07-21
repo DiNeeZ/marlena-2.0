@@ -1,12 +1,11 @@
 import Link from "next/link";
 
-export default function MenuItem({
-  href,
-  title,
-}: {
+type MenuItemProps = {
   href: string;
   title: string;
-}) {
+}
+
+export default function MenuItem({href, title}: MenuItemProps) {
   return (
     <li>
       <Link

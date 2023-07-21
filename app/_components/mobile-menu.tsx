@@ -1,16 +1,12 @@
 "use client";
-import React, {
-  useState,
-  useEffect,
-  useCallback,
-  useLayoutEffect,
-} from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
-import MenuItem from "./menu-item";
-import Burger from "../ui/burger";
+import MenuItem from "./ui/menu-item";
+import Burger from "./ui/burger";
+import LanguageSwitcher from "./language-switcher";
 
-import useScrollLock from "@/app/_hooks/use-scroll-lock";
+import { useScrollLock } from "@/app/_hooks";
 import { MENU_ITEMS } from "@/app/data";
 
 import { Lateef } from "next/font/google";
@@ -70,7 +66,10 @@ export default function MobileMenu() {
             ))}
           </ul>
         </div>
-        <div className="px-8 py-6">Footer MObile MEnu</div>
+        <div className="px-8 py-6">
+          <LanguageSwitcher />
+          <p>Footer MObile MEnu</p>
+        </div>
       </div>
     </div>
   );
